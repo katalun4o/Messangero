@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/tbVoucherNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="@string/Empty"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tbCashExp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="right"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="@string/Empty"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tbCashRec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="right"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="@string/Empty"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tbCheckExp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="right"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="@string/Empty"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tbCheckRec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="right"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="@string/Empty"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background1" >
+
+    <com.inobix.messangero.ActionBar
+        android:id="@+id/layoutActionBar"
+        style="@style/fillWidht"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutActionBar"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/lblCurrentSearchDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblTodaVouchersDate"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblCurrentSearchDateVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblCurrentSearchDate"
+            android:text="2012/01/11"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblCurrentSearchTypeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/lblFilterType"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblCurrentSearchType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/lblCurrentSearchTypeVal"
+            android:text="@string/lblVoucherType"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layoutHeader" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@android:id/tabs" >
+
+                <RelativeLayout
+                    android:id="@+id/tabVouchersList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                    
+                    <TextView
+                        android:id="@+id/lblRearrangeHeader"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rearrange voucher order"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/layoutRearrangeMenu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"                        
+                        android:layout_alignParentBottom="true"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btnSaveVoucherOrder"
+                            style="@style/myButtonStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnOK_OnClick"
+                            android:text="@string/btnDone"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnCancelVoucherOrder"
+                            style="@style/myButtonStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnCancel_OnClick"
+                            android:text="@string/btnCancel"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    
+                    <com.example.android.DynamicListView
+                        android:id="@+id/lvVouchers"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white"
+                        android:layout_below="@id/lblRearrangeHeader"
+                        android:layout_above="@id/layoutRearrangeMenu"
+                        android:cacheColorHint="@android:color/white"
+                        android:divider="@drawable/list_divider"
+                        android:dividerHeight="2dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbLoading"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true" />
+
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tabVouchersMap"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <RelativeLayout
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true" />
+
+                    <Button
+                        android:id="@+id/btnMyLocation"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/mylocation"
+                        android:onClick="btnMyLocation_Click" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </TabHost>
+
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/spVoucherTypePrompt" />
+
+</RelativeLayout>

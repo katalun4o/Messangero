@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <com.inobix.messangero.ActionBar
+        android:id="@+id/layoutActionBar"
+        style="@style/fillWidht"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/svMain"
+        style="@style/fillParent"
+        android:layout_below="@id/layoutActionBar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/viewNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblNumber"
+                    style="@style/search_label"
+                    android:text="@string/lblNumber" />
+
+                <EditText
+                    android:id="@+id/tbNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblNumber"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" >
+
+                    <requestFocus />
+                </EditText>
+
+                <View style="@style/search_delimiter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewReportType"
+                style="@style/search_param_row"
+                android:layout_below="@id/viewNumber" >
+
+                <TextView
+                    android:id="@+id/lblReportType"
+                    style="@style/search_label"
+                    android:text="@string/lblReportType" />
+
+                <Spinner
+                    android:id="@+id/spReportType"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/lblReportType"
+                    android:prompt="@string/lblDocType" />
+
+                <TextView
+                    android:id="@+id/tbReportType"
+                    style="@style/search_value"
+                    android:layout_below="@id/lblReportType" />
+
+                <View style="@style/search_delimiter" />
+
+                <Button
+                    android:id="@+id/btnReportType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tbReportType"
+                    android:layout_alignTop="@id/lblReportType"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewDocType"
+                style="@style/search_param_row"
+                android:layout_below="@id/viewReportType" >
+
+                <TextView
+                    android:id="@+id/lblDocType"
+                    style="@style/search_label"
+                    android:text="@string/lblDocType" />
+
+                <Spinner
+                    android:id="@+id/spDocType"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/lblDocType"
+                    android:prompt="@string/lblDocType" />
+
+                <TextView
+                    android:id="@+id/tbDocType"
+                    style="@style/search_value"
+                    android:layout_below="@id/lblDocType" />
+
+                <Button
+                    android:id="@+id/btnDocType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tbDocType"
+                    android:layout_alignTop="@id/lblDocType"
+                    android:background="@android:color/transparent" />
+
+                <View style="@style/search_delimiter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewDateFrom"
+                style="@style/search_param_row"
+                android:layout_below="@id/viewDocType" >
+
+                <TextView
+                    android:id="@+id/lblDateFrom"
+                    style="@style/search_label"
+                    android:text="@string/lblDateFrom" />
+
+                <TextView
+                    android:id="@+id/lblDateFromValue"
+                    style="@style/search_value"
+                    android:layout_below="@id/lblDateFrom" />
+
+                <Button
+                    android:id="@+id/btnChooseDateFrom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/lblDateFromValue"
+                    android:layout_alignTop="@id/lblDateFrom"
+                    android:background="@android:color/transparent"
+                    android:onClick="lblDateOnClick" />
+
+                <View style="@style/search_delimiter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewDateTo"
+                style="@style/search_param_row"
+                android:layout_below="@id/viewDateFrom" >
+
+                <TextView
+                    android:id="@+id/lblDateTo"
+                    style="@style/search_label"
+                    android:text="@string/lblDateTo" />
+
+                <TextView
+                    android:id="@+id/lblDateToValue"
+                    style="@style/search_value"
+                    android:layout_below="@id/lblDateTo" />
+
+                <Button
+                    android:id="@+id/btnChooseDateTo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/lblDateToValue"
+                    android:layout_alignTop="@id/lblDateTo"
+                    android:background="@android:color/transparent"
+                    android:onClick="lblDateOnClick" />
+
+                <View style="@style/search_delimiter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewVouchType"
+                style="@style/search_param_row"
+                android:layout_below="@id/viewDateTo" >
+
+                <TextView
+                    android:id="@+id/lblVoucherType"
+                    style="@style/search_label"
+                    android:text="@string/lblVoucherType" />
+
+                <Spinner
+                    android:id="@+id/spType"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/lblVoucherType"
+                    android:prompt="@string/spVoucherTypePrompt" />
+
+                <TextView
+                    android:id="@+id/tbVoucherType"
+                    style="@style/search_value"
+                    android:layout_below="@id/lblVoucherType" />
+
+                <Button
+                    android:id="@+id/btnVoucherType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tbVoucherType"
+                    android:layout_alignTop="@id/lblVoucherType"
+                    android:background="@android:color/transparent" />
+
+                <View style="@style/search_delimiter" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

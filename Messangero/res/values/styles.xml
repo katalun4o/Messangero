@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="generalnotitle" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="cust_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="cust_dialog_no_title" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:textAppearance">@style/MyWindowTitle</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyWindowTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="myButtonStyle">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:minHeight">42dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="listHeader">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="commentHeader">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="fillWidht">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fillHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="fillParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="wrapSelf">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="menuTextStyle" parent="@style/wrapSelf">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="MainWindowsStyle" parent="@style/fillParent">
+        <item name="android:background">@drawable/main_background</item>
+    </style>
+
+    <style name="ActionBarButton">
+        <item name="android:layout_width">@dimen/action_bar_button_width</item>
+        <item name="android:layout_height">@dimen/action_bar_button_height</item>
+        <item name="android:layout_marginBottom">@dimen/action_bar_button_bottom_margin</item>
+        <item name="android:layout_marginTop">@dimen/action_bar_button_top_margin</item>
+    </style>
+
+    <style name="ActionBarButtonLeft" parent="@style/ActionBarButton">
+        <item name="android:layout_marginLeft">@dimen/action_bar_button_left_margin</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="ActionBarButtonRight" parent="@style/ActionBarButton">
+        <item name="android:layout_marginRight">@dimen/action_bar_button_right_margin</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="menuLabelStyle">
+        <item name="android:textSize">@dimen/menu_label_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="detailLabelStyle" parent="@style/fillWidht">
+        <item name="android:textSize">@dimen/detail_label_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="detailEditTextStyle" parent="@style/fillWidht">
+        <item name="android:textSize">@dimen/detail_edit_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="search_param_row" parent="@style/fillWidht">
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+    
+    <style name="search_delimiter">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="search_label" parent="@style/wrapSelf">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    
+    <style name="search_value" parent="@style/wrapSelf">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>

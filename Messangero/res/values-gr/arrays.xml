@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="SearchDeliveryTypes">
+        <item>Όλα</item>
+        <item>Παραλαβή πρός Παράδοση</item>
+        <item>Παραδόθηκε</item>
+        <item>Επιστροφή</item>
+    </string-array>
+    <string-array name="SearchOrdersTypes">
+        <item>Όλα</item>
+        <item>Παραλαβή από Οδηγό</item>
+        <item>Έγινε δεκτή</item>
+        <item>Απορρίφθηκε</item>
+        <item>Order Taken</item>
+        <item>Παράδοση στο Γραφείο</item>
+    </string-array>
+    <string-array name="DeliveryTypes">
+        <item>Παραδόθηκε</item>
+        <item>Επιστροφή</item>
+    </string-array>
+    <string-array name="OrderDeliveryTypes">
+        <item>Έγινε δεκτή</item>
+        <item>Απορρίφθηκε</item>
+    </string-array>
+    <string-array name="DocTypes">
+        <item>Όλα</item>
+        <item>Δελτία</item>
+        <item>Τιμολογιο</item>
+        <item>Аποδειξη</item>
+        <item>Παραγγελίες</item>
+    </string-array>
+    <string-array name="Languages">
+        <item>Ελληνικά</item>
+        <item>English</item>
+        <item>Български</item>
+        <item>Español</item>
+    </string-array>
+
+</resources>

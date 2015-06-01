@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string-array name="ReportTypes">
+        <item>Standart</item>
+        <item>Payments</item>
+    </string-array>
+    <string-array name="SearchDeliveryTypes">
+        <item>All</item>
+        <item>Vouchers for delivery</item>
+        <item>Delivered</item>
+        <item>Returned</item>
+    </string-array>
+    <string-array name="SearchOrdersTypes">
+        <item>All</item>
+        <item>Sent to driver</item>
+        <item>Accepted</item>
+        <item>Rejected</item>
+        <item>Order Taken</item>
+        <item>Delivered to office</item>
+    </string-array>
+    <string-array name="DeliveryTypes">
+        <item>Delivered</item>
+        <item>Returned</item>
+    </string-array>
+    <string-array name="OrderDeliveryTypes">
+        <item>Accepted</item>
+        <item>Rejected</item>
+    </string-array>
+    <string-array name="DocTypes">
+        <item>All</item>
+        <item>Voucher</item>
+        <item>Invoice</item>
+        <item>Receipt</item>
+        <item>Order</item>
+    </string-array>
+    <string-array name="Languages">
+        <item>Ελληνικά</item>
+        <item>English</item>
+        <item>Български</item>
+        <item>Español</item>
+    </string-array>
+
+</resources>

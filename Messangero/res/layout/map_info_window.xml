@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgr_map_info_window"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/info"
+        style="@style/wrapSelf"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="2dp"
+        android:minWidth="130dp" >
+
+        <TextView
+            android:id="@+id/lblName"
+            style="@style/wrapSelf"
+            android:maxWidth="200dp"
+            android:text="@string/empty"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblAddress"
+            style="@style/wrapSelf"
+            android:layout_below="@id/lblName"
+            android:layout_marginTop="4dp"
+            android:maxWidth="200dp"
+            android:text="@string/empty"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

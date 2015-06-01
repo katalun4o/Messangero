@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="action_bar_height">47dp</dimen>
+    <dimen name="action_bar_button_height">47dp</dimen>
+    <dimen name="action_bar_button_width">50dp</dimen>
+    <dimen name="action_bar_button_top_margin">0dp</dimen>
+    <dimen name="action_bar_button_bottom_margin">0dp</dimen>
+    <dimen name="action_bar_button_left_margin">0dp</dimen>
+    <dimen name="action_bar_button_right_margin">0dp</dimen>
+    <dimen name="menu_label_size">18sp</dimen>
+    <dimen name="detail_label_size">12sp</dimen>
+    <dimen name="detail_edit_text_size">14sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

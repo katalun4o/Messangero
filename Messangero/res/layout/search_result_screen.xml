@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.inobix.messangero.ActionBar
+        android:id="@+id/layoutActionBar"
+        style="@style/fillWidht" />
+
+    <LinearLayout
+        android:id="@+id/listHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutActionBar"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/tbVoucherNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="@string/lblNumberShort"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCashExp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/lblCashExpShort"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCashRec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/lblCashRecShort"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCheckExp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/lblCheckExpShort"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCheckRec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/lblCheckRecShort"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="@string/Empty"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCashExpTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/Empty"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCashRecTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/Empty"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCheckExpTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/Empty"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbCheckRecTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:text="@string/Empty"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/listFooter"
+        android:layout_below="@id/listHeader"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/white"
+        android:divider="#000000"
+        android:dividerHeight="2dp" />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/listFooter"
+        android:layout_below="@id/listHeader"
+        android:text="@string/NoVouchersString" >
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/listHeader"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

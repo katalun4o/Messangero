@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ReportTypes">
+        <item>Standart</item>
+        <item>Antikatavoli</item>
+    </string-array>
+    <string-array name="SearchDeliveryTypes">
+        <item>Όλα</item>
+        <item>Παραλαβή πρός Παράδοση</item>
+        <item>Παραδόθηκε</item>
+        <item>Επιστροφή</item>
+    </string-array>
+    <string-array name="SearchOrdersTypes">
+        <item>Όλα</item>
+        <item>Παραλαβή από Οδηγό</item>
+        <item>Έγινε δεκτή</item>
+        <item>Απορρίφθηκε</item>
+        <item>Order Taken</item>
+        <item>Παράδοση στο Γραφείο</item>
+    </string-array>
+    <string-array name="VoucherTypesNames">
+        <item>Τηλεφώνημα</item>
+        <item>Παραλαβή από Οδηγό</item>
+        <item>Παράδοση στο Γραφείο</item>
+        <item>Παραλαβή πρός Παράδοση</item>
+        <item>Παραδόθηκε</item>
+        <item>Επιστροφή</item>
+        <item>Διαγραφή</item>
+        <item>ΕΠΙΣΤΡΟΦΗ ΣΤΟΝ ΑΠΟΣΤΟΛΕΑ</item>
+        <item>ΕΠΙΣΤΡΑΦΗΚΕ ΣΤΟΝ ΑΠΟΣΤΟΛΕΑ</item>
+        <item>ΔΕΝ ΠΑΡΑΛΗΦΘΗΚΕ ΑΠΟ ΤΟΝ ΠΕΛΑΤΗ</item>
+        <item>ΠΑΡΑΛΗΦΘΗΚΕ</item>
+        <item>ΔΕΝ ΕΓΙΝΕ Η ΠΑΡΑΛΑΒΗ</item>
+        <item>ΑΠΩΝ</item>
+        <item>ΛΑΘΟΣ ΔΙΕΥΘΗΝΣΗ</item>
+        <item>ΑΡΝΗΣΗ ΠΑΡΑΛΑΒΗΣ</item>
+        <item>ΔΕΝ ΕΙΧΕ ΧΡΗΜΑΤΑ</item>
+        <item>Παραδόθηκε στον Πελάτη</item>
+        <item>Έγινε δεκτή</item>
+        <item>Απορρίφθηκε</item>
+        <item>Order Taken</item>
+        <item>ΕΛΕΙΠΗ ΣΤΟΙΧΕΙΑ ΠΑΡΑΛΗΠΤΗ</item>
+        <item>ΚΛΕΙΣΤΑ</item>
+        <item>ΑΓΝΩΣΤΟΣ</item>
+        </string-array>
+    <string-array name="DeliveryTypes">
+        <item>Παραδόθηκε</item>
+        <item>Επιστροφή</item>
+        <item>Αυθημερόν</item>
+    </string-array>
+    <string-array name="OrderDeliveryTypes">
+        <item>Έγινε δεκτή</item>
+        <item>Απορρίφθηκε</item>
+    </string-array>
+    <string-array name="DocTypes">
+        <item>Όλα</item>
+        <item>Δελτία</item>
+        <item>Τιμολογιο</item>
+        <item>Аποδειξη</item>
+        <item>Παραγγελίες</item>
+    </string-array>
+    <string-array name="Languages">
+        <item>Ελληνικά</item>
+        <item>English</item>
+        <item>Български</item>
+    </string-array>
+
+</resources>

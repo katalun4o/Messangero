@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.inobix.messangero.ActionBar
+        android:id="@+id/layoutActionBar"
+        style="@style/fillWidht"
+        android:layout_alignParentTop="TRUE" />
+
+    <LinearLayout
+        android:id="@+id/layoutButtons1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnAddVoucher"
+                style="@style/myButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnAddVoucher_OnClick"
+                android:text="@string/btnChooseVouchers"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnScanVoucher"
+                style="@style/myButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnScanVoucher_OnClick"
+                android:text="@string/btnScanNewVoucher"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnOK"
+                style="@style/myButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnOK_OnClick"
+                android:text="@string/btnDone"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/myButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnCancel_OnClick"
+                android:text="@string/btnCancel"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstVouchers"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layoutButtons1"
+        android:layout_below="@id/layoutActionBar"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@color/black"
+        android:dividerHeight="2dp" />
+
+</RelativeLayout>

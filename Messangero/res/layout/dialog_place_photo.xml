@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layoutTopButtons"
+        style="@style/fillWidht"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnTakePhotoCamera"
+            style="@style/myButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnTakePhotoCamera" />
+
+        <Button
+            android:id="@+id/btnTakePhotoGallery"
+            style="@style/myButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnTakePhotoGallery" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottomButtons"
+        style="@style/fillWidht"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOK"
+            style="@style/myButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnDone" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/myButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnCancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        style="@style/fillParent"
+        android:layout_above="@+id/layoutBottomButtons"
+        android:layout_below="@id/layoutTopButtons" >
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            style="@style/fillParent"
+            android:layout_margin="1dp"
+            android:contentDescription="@string/empty" />
+    </RelativeLayout>
+
+</RelativeLayout>

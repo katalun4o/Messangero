@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/viewOrderIndex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvOrderIndex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSetOrderIndex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Change" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:contentDescription="@string/Empty"
+            android:src="@drawable/envmdpi" />
+
+        <TextView
+            android:id="@+id/lblDocType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iconType"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1dip"
+            android:contentDescription="@string/Empty"
+            android:src="@drawable/check16" />
+
+        <TextView
+            android:id="@+id/tbNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/iconType"
+            android:layout_toRightOf="@id/lblDocType"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp" >
+
+        <TextView
+            android:id="@+id/lblReceiverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblReceiverName"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbReceiverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/lblReceiverName"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblReceiverAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbReceiverName"
+            android:text="@string/lblAddress"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbReceiverAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbReceiverName"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@id/lblReceiverAddress"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblDeliveryHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbReceiverAddress"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tbDeliveryHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbReceiverAddress"
+            android:layout_toRightOf="@id/lblDeliveryHour"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tbDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblDeliveryHour"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iconCash"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_alignBottom="@id/tbReceiverAddress"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dip"
+            android:contentDescription="@string/Empty"
+            android:src="@drawable/cashicon" />
+    </RelativeLayout>
+
+</LinearLayout>

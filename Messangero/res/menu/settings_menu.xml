@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/miSettings"
+        android:icon="@drawable/settings"
+        android:title="@string/lblSettings" />
+    <item android:id="@+id/miExit"
+        android:icon="@drawable/close"
+        android:title="@string/lblExit" />
+    <item android:id="@+id/miCallOffice"
+        android:icon="@drawable/green_phone_icon"
+        android:title="@string/miCallOffice" />
+        <item android:id="@+id/miResetDB"
+        android:icon="@drawable/restart_icon"
+        android:title="@string/miResetDB" />        
+</menu>

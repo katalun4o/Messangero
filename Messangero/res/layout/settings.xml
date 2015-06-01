@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <com.inobix.messangero.ActionBar
+        android:id="@+id/layoutActionBar"
+        style="@style/fillWidht"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/fillWidht"
+        android:layout_below="@id/layoutActionBar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblIP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblIP"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tbIP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblIP"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblPort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tbIP"
+                android:text="@string/lblPort"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tbPort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblPort"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/lblSyncModel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tbPort"
+                android:text="@string/lblSyncModel"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tbSyncModel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblSyncModel"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblSyncPeriod"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tbSyncModel"
+                android:text="@string/lblDataSyncPeriod"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tbDataSyncPeriod"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblSyncPeriod"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/lblGPSSyncPeriod"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tbDataSyncPeriod"
+                android:text="@string/lblGPSSyncPeriod"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tbGPSSyncPeriod"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblGPSSyncPeriod"
+                android:inputType="number" />
+            
+            <TextView
+                android:id="@+id/lblTorch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tbGPSSyncPeriod"
+                android:text="@string/lblTorch"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            
+            <CheckBox
+                android:id="@+id/chTorch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tbGPSSyncPeriod"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblAllBarcodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chTorch"
+                android:text="@string/lblAllBarcodes"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            
+            
+
+            <CheckBox
+                android:id="@+id/chbAllBarcodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/chTorch"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblOnlyCode39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chbAllBarcodes"
+                android:text="@string/lblOnlyCode39"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chbOnlyCode39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/chbAllBarcodes"
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/lblRotateScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chbOnlyCode39"
+                android:text="@string/RotateScreen"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <CheckBox
+                android:id="@+id/chbRotateScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/chbOnlyCode39"
+                android:text="" />
+
+            <Spinner
+                android:id="@+id/spLanguage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chbRotateScreen"
+                android:prompt="@string/stringLanguagePrompt" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

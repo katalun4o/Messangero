@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inobix.messangero"
+    android:installLocation="preferExternal"
+    android:versionCode="30"
+    android:versionName="3.18" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="com.inobix.messangero.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:required="false" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <permission
+        android:name="com.inobix.messangero.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.inobix.messangero.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.inobix.messangero.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.inobix.messangero.MainMenu"
+            android:configChanges="orientation|locale"
+            android:label="@string/app_name"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.ListTodayVouchers"
+            android:label="@string/TodayVouchers"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.VoucherDetails"
+            android:label="@string/titleVoucherDetails"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.VoucherDelivery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/titleVoucherDelivery"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.SearchScreen"
+            android:label="@string/titleSearchScreen"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.SearchResultScreen"
+            android:label="@string/titleSearchResultScreen"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.OrderVoucherNumbers"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/titleOrderVoucherNumbers"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.GroupVoucherDelivery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/miGroupVoucherDelivery"
+            android:screenOrientation="portrait"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.Settings"
+            android:label="@string/titleSettings"
+            android:theme="@style/generalnotitle" >
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.LoginScreen"
+            android:label="@string/LoginScreen"
+            android:theme="@style/generalnotitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="com.risoft.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.inobix.messangero.PlaceLocation"
+            android:label="@string/title_activity_place_location" >
+        </activity>
+
+        <service android:name="com.inobix.messangero.LocalService" >
+        </service>
+        <service android:name="com.inobix.messangero.GPSService" >
+        </service>
+        <service android:name="com.inobix.messangero.GPSServiceLocManager" >
+        </service>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="45e4e75c0fd6725ef28e0f33fcb945538f06c869" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.inobix.messangero" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.inobix.messangero.GCMIntentService" />
+        <service
+            android:name="com.inobix.messangero.ActivityRecognitionIntentService"
+            android:exported="false"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.inobix.messangero.SignatureDemoActivity"
+            android:label="@string/title_activity_signature_demo"
+            android:screenOrientation="landscape"
+            android:theme="@style/generalnotitle" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCkx_8rMEgQ5wTx1ClEYFUHQEEdCRyYk_4" />
+        
+        <activity
+            android:name="com.inobix.messangero.SelectVouchers"
+            android:theme="@style/generalnotitle"
+            android:label="@string/title_activity_select_vouchers" >
+        </activity>
+    </application>
+
+</manifest>

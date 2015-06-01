@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutActionBar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/layoutAct"
+        style="@style/fillWidht"
+        android:background="@drawable/actionbar_background" >
+
+        <Button
+            android:id="@+id/btnOptions"
+            style="@style/ActionBarButtonLeft"
+            android:background="@android:color/transparent"
+            android:text="25 Nov"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnOptions1"
+            style="@style/ActionBarButton"
+            android:layout_toRightOf="@id/btnOptions"
+            android:background="@android:color/transparent"
+            android:text="Left"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSync"
+            style="@style/ActionBarButtonRight"
+            android:background="@android:color/transparent"
+            android:text="Sync"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSync1"
+            style="@style/ActionBarButton"
+            android:layout_toLeftOf="@id/btnSync"
+            android:background="@android:color/transparent"
+            android:text="Left"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pbSync1"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lblCaption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSync1"
+            android:layout_toRightOf="@+id/btnOptions1"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+</RelativeLayout>

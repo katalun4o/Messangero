@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string-array name="ReportTypes">
+        <item>Стандартен</item>
+        <item>Плащания</item>
+    </string-array>
+    <string-array name="SearchDeliveryTypes">
+        <item>Всички</item>
+        <item>Пакети за доставяне</item>
+        <item>Доставен</item>
+        <item>Върнат</item>
+    </string-array>
+    <string-array name="SearchOrdersTypes">
+        <item>Всички</item>
+        <item>Изпратена на шофьор</item>
+        <item>Приета от шофьор</item>
+        <item>Отказана от шофьор</item>
+        <item>Взета от клиент</item>
+        <item>Донесена в офис</item>
+    </string-array>
+    <string-array name="VoucherTypesNames">
+        <item>Обаждане по телефон</item>
+        <item>Получено от куриер</item>
+        <item>Доставено в офис</item>
+        <item>Предаден за доставка</item>
+        <item>Доставен</item>
+        <item>Върнат</item>
+        <item>Изтрит</item>
+        <item>За връщане на подател</item>
+        <item>Върнат на подател</item>
+        <item>Не получен от получател</item>
+        <item>Получен</item>
+        <item>ΔΕΝ ΕΓΙΝΕ Η ΠΑΡΑΛΑΒΗ</item>
+        <item>Отсъстващ получател</item>
+        <item>Грешен адрес</item>
+        <item>Отказана доставка</item>
+        <item>Невъзможност за плащане</item>
+        <item>Доставен на клиент</item>
+        <item>Приета поръчка</item>
+        <item>Отказана поръчка</item>
+        <item>Взета поръчка</item>
+        <item>ΕΛΕΙΠΗ ΣΤΟΙΧΕΙΑ ΠΑΡΑΛΗΠΤΗ</item>
+        <item>ΚΛΕΙΣΤΑ</item>
+        <item>ΑΓΝΩΣΤΟΣ</item>
+        </string-array>
+    <string-array name="DeliveryTypes">
+        <item>Доставен</item>
+        <item>Върнат</item>
+    </string-array>
+    <string-array name="OrderDeliveryTypes">
+        <item>Приета</item>
+        <item>Отказана</item>
+    </string-array>
+    <string-array name="DocTypes">
+        <item>Всички</item>
+        <item>Пакет</item>
+        <item>Фактура</item>
+        <item>Разписка</item>
+        <item>Поръчка</item>
+    </string-array>
+    <string-array name="Languages">
+        <item>Ελληνικά</item>
+        <item>English</item>
+        <item>Български</item>
+        <item>Español</item>
+    </string-array>
+
+</resources>

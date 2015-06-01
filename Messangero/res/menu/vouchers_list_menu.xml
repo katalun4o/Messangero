@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item android:id="@+id/mitype"
+        android:title="@string/miSearchType" />
+    <item android:id="@+id/miDate"
+        android:title="@string/miSearchDate" />
+    <item android:id="@+id/miRearrange"
+        android:title="@string/miRearrange" />
+
+</menu>

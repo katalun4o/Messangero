@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="SearchDeliveryTypes">
+        <item>Todos</item>
+        <item>Paquetes para enviar</item>
+        <item>Enviado</item>
+        <item>Devuelto</item>
+    </string-array>
+    <string-array name="SearchOrdersTypes">
+        <item>Todos</item>
+        <item>Enviado a chofer</item>
+        <item>Recibido por chofer</item>
+        <item>Negado por el chofer</item>
+        <item>Recogido del cliente </item>
+        <item>Traido en oficina </item>
+    </string-array>
+    <string-array name="DeliveryTypes">
+        <item>Enviado</item>
+        <item>Devuelto</item>
+    </string-array>
+    <string-array name="OrderDeliveryTypes">
+        <item>recibido</item>
+        <item>Negado</item>
+    </string-array>
+    <string-array name="DocTypes">
+        <item>Todos</item>
+        <item>Paquet</item>
+        <item>Factura</item>
+        <item>Recibo</item>
+        <item>Orden</item>
+    </string-array>
+    <string-array name="Languages">
+        <item>Ελληνικά</item>
+        <item>English</item>        
+        <item>Български</item>
+        <item>Español</item>
+    </string-array>
+
+</resources>

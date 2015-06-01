@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.inobix.messangero.ActionBar
+        android:id="@+id/layoutActionBar"
+        style="@style/fillWidht" />
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="btnAccept_OnClick"
+                android:text="@string/btnAccept"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnDecline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="btnDecline_OnClick"
+                android:text="@string/btnDecline"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/layoutContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layoutBottom"
+        android:layout_below="@id/layoutActionBar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblVoucher"
+                style="@style/detailLabelStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lblVoucher" />
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblNumber"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lblNumber" />
+
+                <TextView
+                    android:id="@+id/tbNumber"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblDate"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblDate" />
+
+                <TextView
+                    android:id="@+id/tbDate"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblCustomerType"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lblCustomerType" />
+
+                <TextView
+                    android:id="@+id/tbCustomerType"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblIfIsCreditValue"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/lblIfIsCreditValue" />
+
+                <TextView
+                    android:id="@+id/tbIfIsCreditValue"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblStatus"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblStatus" />
+
+                <TextView
+                    android:id="@+id/tbStatus"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblPacketsCount"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblPacketsCount" />
+
+                <TextView
+                    android:id="@+id/tbPacketsCount"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblCashPayment"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblCashPayment" />
+
+                <TextView
+                    android:id="@+id/tbCashPayment"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblChecksCount"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblChecksCount" />
+
+                <TextView
+                    android:id="@+id/tbChecksCount"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblCheckPayment"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblCheckPayment" />
+
+                <TextView
+                    android:id="@+id/tbCheckPayment"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblDeliveryHour"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblDeliveryHour" />
+
+                <TextView
+                    android:id="@+id/tbDeliveryHour"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblParcelStatus"
+                    style="@style/detailLabelStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lblDetailsParcelStatus" />
+
+                <CheckBox
+                    android:id="@+id/chbParcelStatus"
+                    style="@style/detailLabelStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblNotes"
+                    style="@style/detailLabelStyle"
+                    android:layout_weight="1"
+                    android:text="@string/lblNotes" />
+
+                <TextView
+                    android:id="@+id/tbNotes"
+                    style="@style/detailLabelStyle"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:id="@+id/layoutCharges"
+                style="@style/fillWidht"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblCharges"
+                    style="@style/detailLabelStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lblCharges" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/viewLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/list_divider" />
+
+                <TextView
+                    android:id="@+id/lblSender"
+                    style="@style/detailLabelStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lblSender" />
+
+                <LinearLayout
+                    style="@style/fillWidht"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lblSenderName"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lblName" />
+
+                    <TextView
+                        android:id="@+id/tbSenderName"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/fillWidht"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lblSenderAddress"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lblAddress" />
+
+                    <TextView
+                        android:id="@+id/tbSenderAddress"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/fillWidht"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lblSenderPhone"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lblPhone" />
+
+                    <TextView
+                        android:id="@+id/tbSenderPhone"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutReceiver"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/viewLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/list_divider" />
+
+                <TextView
+                    android:id="@+id/lblReceiver"
+                    style="@style/detailLabelStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lblReceiver" />
+
+                <LinearLayout
+                    style="@style/fillWidht"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lblReceiverName"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lblName" />
+
+                    <TextView
+                        android:id="@+id/tbReceiverName"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/fillWidht"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lblReceiverAddress"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lblAddress" />
+
+                    <TextView
+                        android:id="@+id/tbReceiverAddress"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/fillWidht"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lblReceiverPhone"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/lblPhone" />
+
+                    <TextView
+                        android:id="@+id/tbReceiverPhone"
+                        style="@style/detailLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:id="@+id/layoutTrans"
+                style="@style/fillWidht"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblTrans"
+                    style="@style/detailLabelStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lblTransactions" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fillWidht"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+                <TextView
+                    android:id="@+id/lblSignature"
+                    style="@style/detailLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblSignature" />
+
+                <ImageView
+                    android:id="@+id/ivSignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Empty" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="320dp"
+                android:layout_height="160dp"
+                android:contentDescription="@string/Empty"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
