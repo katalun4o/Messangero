@@ -35,7 +35,7 @@ public class AdapterVouchers extends ArrayAdapter<Courier> {
 	
 	public void SetOrderActive(boolean isOrderActive)
 	{
-		this.IsOrderActive = isOrderActive;
+		this.IsOrderActive = isOrderActive;//da go eba
 	}
 	
 	final int INVALID_ID = -1;
